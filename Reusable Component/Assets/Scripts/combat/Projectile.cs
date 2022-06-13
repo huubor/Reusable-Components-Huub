@@ -9,7 +9,6 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collision");
         collision.gameObject.GetComponent<IDestroyable>()?.DestroyObject();
 
         Destroy(gameObject);

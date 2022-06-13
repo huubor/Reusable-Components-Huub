@@ -46,14 +46,14 @@ public class Tutorial : MonoBehaviour
             {
                 StartCoroutine(Wait(2, "now try to spint with LShift"));
                 playOnce = false;
-                Destroy(myPlayer.GetComponent<walk>());
+                //Destroy(myPlayer.GetComponent<walk>());
             }
 
 
-            if (myPlayer.GetComponent<SprintMove>() == null)
-            {
-                myPlayer.AddComponent<SprintMove>();
-            }
+            //if (myPlayer.GetComponent<SprintMove>() == null)
+           // {
+                //myPlayer.AddComponent<SprintMove>();
+           // }
 
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -67,6 +67,11 @@ public class Tutorial : MonoBehaviour
                     myShootCombat.enabled = true;
                 }
                 crossair.gameObject.SetActive(true);
+
+                StartCoroutine(Wait(4, "you do also have some skills"));
+                StartCoroutine(Wait(4, "try to open it with the F1 key"));
+
+                //myPlayer.AddComponent<>
             }
         }
         #endregion

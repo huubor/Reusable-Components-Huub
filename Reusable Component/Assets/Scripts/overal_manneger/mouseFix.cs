@@ -8,4 +8,9 @@ public class mouseFix : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    private void Update()
+    {
+        
+    }
 }
