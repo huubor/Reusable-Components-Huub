@@ -40,7 +40,7 @@ public class walk : MonoBehaviour
         //W
         if(Input.GetKey(KeyCode.W))
         {
-            _Rigid.velocity = transform.forward * _Speed;
+            _Rigid.MovePosition()
         }
         else if (Input.GetKeyUp(KeyCode.W))
         {
@@ -86,7 +86,7 @@ public class walk : MonoBehaviour
         }*/
         
 
-        Vector3 m_Input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        _Rigid.MovePosition(transform.position + m_Input * Time.deltaTime * _Speed);
+        //Vector3 m_Input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        _Rigid.MovePosition(transform.position + direction * Time.deltaTime * _Speed);
     }
 }
