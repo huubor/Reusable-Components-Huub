@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
 
 public class Tutorial : MonoBehaviour
 {
@@ -35,7 +36,6 @@ public class Tutorial : MonoBehaviour
             {
                 myText.text = "well done";
                 walking = false;
-                StartCoroutine(Wait(5, ""));
                 sprinting = true;
             }
         }
@@ -46,14 +46,14 @@ public class Tutorial : MonoBehaviour
             {
                 StartCoroutine(Wait(2, "now try to spint with LShift"));
                 playOnce = false;
-                //Destroy(myPlayer.GetComponent<walk>());
+                Destroy(myPlayer.GetComponent<walk>());
             }
 
 
-            //if (myPlayer.GetComponent<SprintMove>() == null)
-           // {
-                //myPlayer.AddComponent<SprintMove>();
-           // }
+            if (myPlayer.GetComponent<SprintMove>() == null)
+            {
+                myPlayer.AddComponent<SprintMove>();
+            }
 
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -69,9 +69,8 @@ public class Tutorial : MonoBehaviour
                 crossair.gameObject.SetActive(true);
 
                 StartCoroutine(Wait(4, "you do also have some skills"));
-                StartCoroutine(Wait(4, "try to open it with the F1 key"));
+                StartCoroutine(Wait(4, "try to open it with the B key"));
 
-                //myPlayer.AddComponent<>
             }
         }
         #endregion

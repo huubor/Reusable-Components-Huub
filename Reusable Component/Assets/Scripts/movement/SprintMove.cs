@@ -8,19 +8,18 @@ public class SprintMove : MonoBehaviour
     public event Action OnStartSprint = delegate { };
     public event Action OnStopSprint = delegate { };
 
-    [SerializeField] CharacterController _Controler;
-    [SerializeField] float _Speed = 5f;
+    private Rigidbody rigid;
+    [SerializeField] public float _Speed = 50f;
     [SerializeField] float _SmoothTime = 0.1f;
     [SerializeField] float _SmoothSpeed = 0.5f;
     [SerializeField] Transform cam;
-    private Animator myAnimator;
-
-    private bool boolSrint = false;
+    
+    private float jumpFloat = 10f;
+    public Vector3 JumpVector;
 
     private void Awake()
     {
-        myAnimator = GetComponent<Animator>();
-        _Controler = GetComponent<CharacterController>();
+        rigid = GetComponent<Rigidbody>();
         cam = Camera.main.transform;
     }
 
@@ -28,45 +27,31 @@ public class SprintMove : MonoBehaviour
 
     void Update()
     {
+        //input
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0, vertical);
+        //=========================================================
 
-            //player faces the camera
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _SmoothSpeed, _SmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+        //rotation player
+        float PlayerAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+        float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, PlayerAngle, ref _SmoothSpeed, _SmoothTime);
+        transform.rotation = Quaternion.Euler(0f, angle, 0f);
+        //========================================================================================================   
 
-            //following the camera (doesn't work, it keeps on walking with this)
-            Vector3 moveDirection = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
+        Vector3 movedir = Quaternion.Euler(0f, PlayerAngle, 0f) * Vector3.forward;
 
-            //moving of the player
-            if (Input.GetKey(KeyCode.W) && !boolSrint || Input.GetKey(KeyCode.A) && !boolSrint || Input.GetKey(KeyCode.S) && !boolSrint || Input.GetKey(KeyCode.D) && !boolSrint)
-            {
-                _Controler.Move(moveDirection * _Speed * Time.deltaTime);
-                myAnimator.SetBool("walking", true);
-            }
-            else 
-            myAnimator.SetBool("walking", false);
+        //moving
 
-        //sprint check
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
-            boolSrint = true;
-            if (Input.GetKey(KeyCode.W) && boolSrint || Input.GetKey(KeyCode.A) && boolSrint || Input.GetKey(KeyCode.S) && boolSrint || Input.GetKey(KeyCode.D) && boolSrint)
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                _Controler.Move(moveDirection * (_Speed * 10) * Time.deltaTime);
-                myAnimator.SetBool("sprinting", true);
+                rigid.MovePosition(transform.position + movedir * Time.deltaTime * _Speed * 2);
             }
             else
-            {
-                myAnimator.SetBool("sprinting", false);
-            }
-        }
-        else
-        {
-            boolSrint = false;
-            myAnimator.SetBool("sprinting", false);
+
+                rigid.MovePosition(transform.position + movedir * Time.deltaTime * _Speed);
         }
     }
 }

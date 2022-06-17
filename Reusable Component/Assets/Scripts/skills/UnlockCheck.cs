@@ -7,18 +7,25 @@ using UnityEngine.UI;
 public class UnlockCheck : MonoBehaviour
 {
     [SerializeField] Button JetJump;
-    [SerializeField] Values myValues;
+    [SerializeField] GameObject myValueObject;
+    [SerializeField] GameObject _Player;
+    private Values myValues;
 
     private void Awake()
     {
-        JetJump.onClick.AddListener(UnlockJetJump);
+        myValues = myValueObject.GetComponent<Values>();
     }
 
-    private void UnlockJetJump()
+    public void UnlockJetJump()
     {
-        if(myValues.skillPoints >= 1)
+        if (myValues.skillPoints >= 1)
         {
-
+            _Player.AddComponent<JetJump>();
+            myValues.skillPoints--;
+        }
+        else
+        {
+            Debug.Log("niet genoeg punten");
         }
     }
 }
