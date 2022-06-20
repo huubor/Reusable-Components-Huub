@@ -12,6 +12,5 @@ public class AndereDestroyable : MonoBehaviour, IDestroyable
         Destroy(gameObject);
         aAudio.Play();
         pPartical.Play();
-        Debug.Log("test");
     }
 }

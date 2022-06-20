@@ -9,7 +9,10 @@ public class Tutorial : MonoBehaviour
     [SerializeField] Canvas myCanvas;
     [SerializeField] GameObject myPlayer;
     [SerializeField] Image crossair;
+    [SerializeField] Values myValues;
     Shoot myShootCombat;
+
+
     bool walking = true;
     bool sprinting = false;
     bool playOnce = true;
@@ -69,7 +72,10 @@ public class Tutorial : MonoBehaviour
                 crossair.gameObject.SetActive(true);
 
                 StartCoroutine(Wait(4, "you do also have some skills"));
-                StartCoroutine(Wait(4, "try to open it with the B key"));
+                StartCoroutine(Wait(4, "i have given you a skillpoint"));
+                myValues.skillPoints++;
+                StartCoroutine(Wait(4, "try to open the skill trhee with the B key"));
+                
 
             }
         }

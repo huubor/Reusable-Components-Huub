@@ -13,9 +13,7 @@ public class SprintMove : MonoBehaviour
     [SerializeField] float _SmoothTime = 0.1f;
     [SerializeField] float _SmoothSpeed = 0.5f;
     [SerializeField] Transform cam;
-    
-    private float jumpFloat = 10f;
-    public Vector3 JumpVector;
+    //public Vector3 JumpVector;
 
     private void Awake()
     {
