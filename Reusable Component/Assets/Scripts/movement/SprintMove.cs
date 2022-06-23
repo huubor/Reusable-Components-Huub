@@ -5,20 +5,20 @@ using System;
 
 public class SprintMove : MonoBehaviour
 {
-    public event Action OnStartSprint = delegate { };
-    public event Action OnStopSprint = delegate { };
-
-    private Rigidbody rigid;
-    [SerializeField] public float _Speed = 50f;
+    [SerializeField] float _Speed = 50f;
     [SerializeField] float _SmoothTime = 0.1f;
     [SerializeField] float _SmoothSpeed = 0.5f;
     [SerializeField] Transform cam;
-    //public Vector3 JumpVector;
+
+
+    private Rigidbody rigid;
+    private Animator animator;
 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody>();
         cam = Camera.main.transform;
+        animator = GetComponent<Animator>();
     }
 
 
@@ -46,10 +46,19 @@ public class SprintMove : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 rigid.MovePosition(transform.position + movedir * Time.deltaTime * _Speed * 2);
+                animator.ResetTrigger("walking");
+                animator.SetTrigger("sprinting");
             }
             else
-
+            {
+                animator.ResetTrigger("sprinting");
+                animator.SetTrigger("walking");
                 rigid.MovePosition(transform.position + movedir * Time.deltaTime * _Speed);
+            }
+        }
+        else
+        {
+            animator.ResetTrigger("walking");
         }
     }
 }
