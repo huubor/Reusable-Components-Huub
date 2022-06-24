@@ -18,7 +18,7 @@ public class SprintMove : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody>();
         cam = Camera.main.transform;
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
 
@@ -46,19 +46,20 @@ public class SprintMove : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 rigid.MovePosition(transform.position + movedir * Time.deltaTime * _Speed * 2);
-                animator.ResetTrigger("walking");
-                animator.SetTrigger("sprinting");
+                //animator.ResetTrigger("walking");
+                //animator.SetTrigger("sprinting");
             }
             else
             {
-                animator.ResetTrigger("sprinting");
-                animator.SetTrigger("walking");
+                //animator.ResetTrigger("sprinting");
+                //animator.SetTrigger("walking");
                 rigid.MovePosition(transform.position + movedir * Time.deltaTime * _Speed);
             }
         }
         else
         {
-            animator.ResetTrigger("walking");
+            return;
+            //animator.ResetTrigger("walking");
         }
     }
 }
