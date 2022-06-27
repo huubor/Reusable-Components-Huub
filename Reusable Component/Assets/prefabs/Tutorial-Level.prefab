@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1293720363750496806}
   - component: {fileID: 1293720363750496807}
   - component: {fileID: 1293720363750496800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 1293720363932419748}
   - component: {fileID: 1293720363932419749}
   - component: {fileID: 1293720363932419750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 1293720363996973355}
   - component: {fileID: 1293720363996973332}
   - component: {fileID: 1293720363996973333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 1293720364134267632}
   - component: {fileID: 1293720364134267633}
   - component: {fileID: 1293720364134267634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 1293720364176253463}
   - component: {fileID: 1293720364176253456}
   - component: {fileID: 1293720364176253457}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DoorFrame (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 1293720364298408373}
   - component: {fileID: 1293720364298408374}
   - component: {fileID: 1293720364298408375}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,7 +982,7 @@ GameObject:
   - component: {fileID: 1293720364311835611}
   - component: {fileID: 1293720364311835588}
   - component: {fileID: 1293720364311835589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 1293720364570269761}
   - component: {fileID: 1293720364570269762}
   - component: {fileID: 1293720364570269763}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 1293720364691884892}
   - component: {fileID: 1293720364691884893}
   - component: {fileID: 1293720364691884894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: run-trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1664,7 +1664,7 @@ GameObject:
   - component: {fileID: 1293720364782093193}
   - component: {fileID: 1293720364782093194}
   - component: {fileID: 1293720364782093198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1969,7 +1969,7 @@ GameObject:
   - component: {fileID: 1293720364845010870}
   - component: {fileID: 1293720364845010871}
   - component: {fileID: 1293720364845010868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2078,7 +2078,7 @@ GameObject:
   - component: {fileID: 1293720364912031455}
   - component: {fileID: 1293720364912031448}
   - component: {fileID: 1293720364912031449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tutorial-Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2199,7 +2199,7 @@ GameObject:
   - component: {fileID: 1293720364915392412}
   - component: {fileID: 1293720364915392413}
   - component: {fileID: 1293720364915392414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2393,7 +2393,7 @@ GameObject:
   - component: {fileID: 1293720365034200082}
   - component: {fileID: 1293720365034200083}
   - component: {fileID: 1293720365034200092}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2490,7 +2490,7 @@ GameObject:
   - component: {fileID: 1293720365061241583}
   - component: {fileID: 1293720365061241576}
   - component: {fileID: 1293720365061241577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2587,7 +2587,7 @@ GameObject:
   - component: {fileID: 1293720365093194860}
   - component: {fileID: 1293720365093194861}
   - component: {fileID: 1293720365093194862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2687,7 +2687,7 @@ GameObject:
   - component: {fileID: 1293720365107378021}
   - component: {fileID: 1293720365107378040}
   - component: {fileID: 1293720365107378047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terget (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 1293720365119238215}
   - component: {fileID: 1293720365119238208}
   - component: {fileID: 1293720365119238209}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2924,7 +2924,7 @@ GameObject:
   - component: {fileID: 1293720365123344393}
   - component: {fileID: 1293720365123344398}
   - component: {fileID: 1293720365123344397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3049,7 +3049,7 @@ GameObject:
   - component: {fileID: 1293720365346127231}
   - component: {fileID: 1293720365346127224}
   - component: {fileID: 1293720365346127225}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3340,7 +3340,7 @@ GameObject:
   - component: {fileID: 1293720365465130133}
   - component: {fileID: 1293720365465130134}
   - component: {fileID: 1293720365465130135}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3437,7 +3437,7 @@ GameObject:
   - component: {fileID: 1293720365468856178}
   - component: {fileID: 1293720365468856179}
   - component: {fileID: 1293720365468856188}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3535,7 +3535,7 @@ GameObject:
   - component: {fileID: 1293720365533026779}
   - component: {fileID: 1293720365533026756}
   - component: {fileID: 1293720365533026777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3738,7 +3738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1293720365597385784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shootable door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3887,7 +3887,7 @@ GameObject:
   - component: {fileID: 1293720365654659631}
   - component: {fileID: 1293720365654659624}
   - component: {fileID: 1293720365654659625}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3985,7 +3985,7 @@ GameObject:
   - component: {fileID: 1293720365665826723}
   - component: {fileID: 1293720365665826732}
   - component: {fileID: 1293720365665826733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4052,7 +4052,7 @@ GameObject:
   - component: {fileID: 1293720365735501340}
   - component: {fileID: 1293720365735501341}
   - component: {fileID: 1293720365735501342}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorFrame (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4152,7 +4152,7 @@ GameObject:
   - component: {fileID: 1293720365847901928}
   - component: {fileID: 1293720365847901929}
   - component: {fileID: 1293720365847901930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4360,7 +4360,7 @@ GameObject:
   - component: {fileID: 1293720365877014005}
   - component: {fileID: 1293720365877014006}
   - component: {fileID: 1293720365877014007}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DoorFrame (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
