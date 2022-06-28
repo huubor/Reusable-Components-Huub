@@ -7,7 +7,7 @@ public class JetJump : MonoBehaviour
     private Rigidbody rigid;
     private GroundCheck jumpGround;
 
-    float _force = 1300f;
+    float _force = 1000f;
 
     private void Awake()
     {
