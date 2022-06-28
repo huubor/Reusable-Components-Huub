@@ -49,7 +49,7 @@ public class Tutorial : MonoBehaviour
             }
         }
 
-        if (sprinting && !mySource.isPlaying)
+        if (sprinting && !mySource.isPlaying && playAudio)
         {
             if (playOnce)
             {
@@ -67,7 +67,7 @@ public class Tutorial : MonoBehaviour
             }
 
 
-            if (Input.GetKey(KeyCode.LeftShift) && !mySource.isPlaying)
+            if (Input.GetKey(KeyCode.LeftShift) && !mySource.isPlaying && playAudio)
             {
                 mySource.clip = shootAudio;
                 mySource.Play();
